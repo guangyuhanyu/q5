@@ -154,4 +154,6 @@ footer{padding:12pt 0 0;font-size:10pt}
     document.getElementById('gy-pyh').textContent=on?'':'Bấm vào một chữ để xem phiên âm của chữ đó';
     [].forEach.call(L.querySelectorAll('ruby.show'),function(x){x.classList.remove('show');});};
   L.addEventListener('click',function(e){if(L.classList.contains('py-on'))return;var r=e.target.closest&&e.target.closest('ruby');if(r)r.classList.toggle('show');});
-};pyToggle();function fitBanks(){document.querySelectorAll('.bank').forEach(function(b){var s=100;b.style.fontSize='';while(b.scrollWidth>b.clientWidth+1&&s>45){s-=5;b.style.fontSize=s+'%';}});};fitBanks();addEventListener("load",fitBanks);addEventListener("resize",fitBanks);</script></body></html>
+};pyToggle();function fitBanks(){document.querySelectorAll('.bank').forEach(function(b){var s=100;b.style.fontSize='';while(b.scrollWidth>b.clientWidth+1&&s>45){s-=5;b.style.fontSize=s+'%';}});};fitBanks();addEventListener("load",fitBanks);addEventListener("resize",fitBanks);</script><!-- GY-TOOLS loader v1 · công cụ giáo viên dùng chung (chỉ tải trên máy đã bật ?gv=1) -->
+<script>(function(){try{var q=location.search.match(/[?&]gv=([01])/);if(q)localStorage.setItem('gy-teacher',q[1]);if(localStorage.getItem('gy-teacher')!=='1')return;}catch(e){return;}var s=document.createElement('script');s.src='https://guangyuhanyu.github.io/gy-tools.js?t='+Math.floor(Date.now()/6e5);(document.head||document.documentElement).appendChild(s);})();</script>
+</body></html>
